@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calorypal
+spec:
+  selector:
+    matchLabels:
+      app: calorypal
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: calorypal
+    spec:
+      containers:
+      - name: calorypal
+        image: alienz11/calorypal:latest
+        ports:
+        - containerPort: 8080
