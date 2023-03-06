@@ -15,5 +15,6 @@ spec:
       containers:
       - name: calorypal
         image: alienz11/calorypal:latest
+        imagepullpolicy: always
         ports:
-        - containerPort: 8080
+        - containerPort: 80
