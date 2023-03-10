@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: calorypal
-        image: alienz11/calorypal:latest
+        image: gcr.io/<PROJECT_ID>/<IMAGE_NAME>:<TAG>
         imagepullpolicy: always
         ports:
         - containerPort: 80
