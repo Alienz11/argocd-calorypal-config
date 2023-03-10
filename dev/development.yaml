@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: calorypal
-        image: gcr.io/<PROJECT_ID>/<IMAGE_NAME>:<TAG>
+        image: gcr.io/youverifyhr/calorypal_app:latest
         imagepullpolicy: always
         ports:
         - containerPort: 80
